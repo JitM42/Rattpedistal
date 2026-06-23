@@ -10,6 +10,7 @@
 - **Nav_innerdiameter** (number)
 - **Pedestal_höjd** (number)
 - **Pedestal_bas_bredd** (number)
+- **Pedestal_tjocklek** (number)
 
 
 
