@@ -23,6 +23,11 @@
       "name": "Pedestal_bas_bredd",
       "ioValue": 400,
       "currentEquation": "400"
+    },
+    {
+      "name": "Pedestal_tjocklek",
+      "ioValue": 60,
+      "currentEquation": "60"
     }
   ],
   "topLevel": true,
@@ -87,18 +92,18 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 650
+          "ioValue": 60
         },
         {
           "name": "y length",
-          "ioValue": 10
+          "ioValue": 400
         }
       ]
     },
     {
       "atomType": "Move",
-      "x": 0.284375,
-      "y": 0.5476772616136919,
+      "x": 0.3296875,
+      "y": 0.5281173594132029,
       "uniqueID": "id-23",
       "ioValues": [
         {
@@ -107,7 +112,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": -325
+          "ioValue": 0
         },
         {
           "name": "yDist",
@@ -132,6 +137,38 @@
         }
       ],
       "currentEquation": "-h/2"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.4760000000000001,
+      "uniqueID": "id-34",
+      "name": "Pedestal_tjocklek"
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.2421875,
+      "y": 0.4156479217603912,
+      "uniqueID": "id-37",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 90,
+          "currentEquation": "90"
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -141,23 +178,28 @@
       "ap2ID": "id-16"
     },
     {
-      "ap2Name": "x length",
-      "ap1ID": "id-10",
-      "ap2ID": "id-19"
-    },
-    {
       "ap2Name": "h",
       "ap1ID": "id-10",
       "ap2ID": "id-29"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-19",
-      "ap2ID": "id-23"
+      "ap2Name": "y length",
+      "ap1ID": "id-13",
+      "ap2ID": "id-19"
     },
     {
-      "ap2Name": "xDist",
-      "ap1ID": "id-29",
+      "ap2Name": "geometry",
+      "ap1ID": "id-19",
+      "ap2ID": "id-37"
+    },
+    {
+      "ap2Name": "x length",
+      "ap1ID": "id-34",
+      "ap2ID": "id-19"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-37",
       "ap2ID": "id-23"
     }
   ],
