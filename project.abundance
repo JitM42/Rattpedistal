@@ -21,13 +21,17 @@
     },
     {
       "name": "Pedestal_bas_bredd",
-      "ioValue": 400,
-      "currentEquation": "400"
+      "ioValue": 450,
+      "currentEquation": "450"
     },
     {
       "name": "Pedestal_tjocklek",
       "ioValue": 60,
       "currentEquation": "60"
+    },
+    {
+      "name": "Pedestal_ben_bredd",
+      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -166,7 +170,7 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 400
+          "ioValue": 450
         },
         {
           "name": "y length",
@@ -247,7 +251,7 @@
         {
           "name": "Shape 3",
           "ioValue": {
-            "geometry": "rotate-move-rectangle-400-1-0-0.5-0-0-0-0",
+            "geometry": "rotate-move-rectangle-450-1-0-0.5-0-0-0-0",
             "dimension": "2D",
             "plane": {
               "origin": [
@@ -317,6 +321,13 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.56,
+      "uniqueID": "id-122",
+      "name": "Pedestal_ben_bredd"
     }
   ],
   "allConnectors": [
@@ -384,6 +395,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-112",
       "ap2ID": "id-116"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-116",
+      "ap2ID": "id-2"
     }
   ],
   "unitsKey": "MM",
