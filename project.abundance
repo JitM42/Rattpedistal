@@ -66,9 +66,101 @@
       "y": 0.39200000000000007,
       "uniqueID": "id-13",
       "name": "Pedestal_bas_bredd"
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.17031249999999998,
+      "y": 0.1295843520782396,
+      "uniqueID": "id-16",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 200
+        }
+      ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.165625,
+      "y": 0.3276283618581907,
+      "uniqueID": "id-19",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 650
+        },
+        {
+          "name": "y length",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.284375,
+      "y": 0.5476772616136919,
+      "uniqueID": "id-23",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": -325
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.12864583333333335,
+      "y": 0.6283618581907091,
+      "uniqueID": "id-29",
+      "name": "-h/2",
+      "ioValues": [
+        {
+          "name": "h",
+          "ioValue": 650
+        }
+      ],
+      "currentEquation": "-h/2"
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "diameter",
+      "ap1ID": "id-4",
+      "ap2ID": "id-16"
+    },
+    {
+      "ap2Name": "x length",
+      "ap1ID": "id-10",
+      "ap2ID": "id-19"
+    },
+    {
+      "ap2Name": "h",
+      "ap1ID": "id-10",
+      "ap2ID": "id-29"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-19",
+      "ap2ID": "id-23"
+    },
+    {
+      "ap2Name": "xDist",
+      "ap1ID": "id-29",
+      "ap2ID": "id-23"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
