@@ -6,8 +6,23 @@
   "name": "Rattpedistal",
   "ioValues": [
     {
-      "name": "Input",
-      "ioValue": 10
+      "name": "Nav_ytterdiameter",
+      "ioValue": 200
+    },
+    {
+      "name": "Nav_innerdiameter",
+      "ioValue": 50,
+      "currentEquation": "50"
+    },
+    {
+      "name": "Pedestal_höjd",
+      "ioValue": 650,
+      "currentEquation": "650"
+    },
+    {
+      "name": "Pedestal_bas_bredd",
+      "ioValue": 400,
+      "currentEquation": "400"
     }
   ],
   "topLevel": true,
@@ -28,7 +43,29 @@
       "atomType": "Input",
       "x": 0.0231,
       "y": 0.14,
-      "uniqueID": "id-4"
+      "uniqueID": "id-4",
+      "name": "Nav_ytterdiameter"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.22400000000000003,
+      "uniqueID": "id-7",
+      "name": "Nav_innerdiameter"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.30800000000000005,
+      "uniqueID": "id-10",
+      "name": "Pedestal_höjd"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.39200000000000007,
+      "uniqueID": "id-13",
+      "name": "Pedestal_bas_bredd"
     }
   ],
   "allConnectors": [],
