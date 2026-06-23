@@ -86,8 +86,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.165625,
-      "y": 0.3276283618581907,
+      "x": 0.20729166666666668,
+      "y": 0.5965770171149144,
       "uniqueID": "id-19",
       "ioValues": [
         {
@@ -102,8 +102,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.3296875,
-      "y": 0.5281173594132029,
+      "x": 0.3333333333333333,
+      "y": 0.3471882640586797,
       "uniqueID": "id-23",
       "ioValues": [
         {
@@ -112,7 +112,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": 0
+          "ioValue": 550
         },
         {
           "name": "yDist",
@@ -126,17 +126,21 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.12864583333333335,
-      "y": 0.6283618581907091,
+      "x": 0.1921875,
+      "y": 0.410757946210269,
       "uniqueID": "id-29",
-      "name": "-h/2",
+      "name": "ph-yd/2",
       "ioValues": [
         {
-          "name": "h",
+          "name": "ph",
           "ioValue": 650
+        },
+        {
+          "name": "yd",
+          "ioValue": 200
         }
       ],
-      "currentEquation": "-h/2"
+      "currentEquation": "ph-yd/2"
     },
     {
       "atomType": "Input",
@@ -147,8 +151,8 @@
     },
     {
       "atomType": "Rotate",
-      "x": 0.2421875,
-      "y": 0.4156479217603912,
+      "x": 0.26197916666666665,
+      "y": 0.22004889975550124,
       "uniqueID": "id-37",
       "ioValues": [
         {
@@ -178,7 +182,12 @@
       "ap2ID": "id-16"
     },
     {
-      "ap2Name": "h",
+      "ap2Name": "yd",
+      "ap1ID": "id-4",
+      "ap2ID": "id-29"
+    },
+    {
+      "ap2Name": "ph",
       "ap1ID": "id-10",
       "ap2ID": "id-29"
     },
@@ -189,8 +198,13 @@
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-19",
+      "ap1ID": "id-16",
       "ap2ID": "id-37"
+    },
+    {
+      "ap2Name": "xDist",
+      "ap1ID": "id-29",
+      "ap2ID": "id-23"
     },
     {
       "ap2Name": "x length",
