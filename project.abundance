@@ -112,7 +112,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": 550
+          "ioValue": -550
         },
         {
           "name": "yDist",
@@ -129,7 +129,7 @@
       "x": 0.1921875,
       "y": 0.410757946210269,
       "uniqueID": "id-29",
-      "name": "ph-yd/2",
+      "name": "-ph+yd/2",
       "ioValues": [
         {
           "name": "ph",
@@ -140,7 +140,7 @@
           "ioValue": 200
         }
       ],
-      "currentEquation": "ph-yd/2"
+      "currentEquation": "-ph+yd/2"
     },
     {
       "atomType": "Input",
